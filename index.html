@@ -1,0 +1,375 @@
+<!Doctype = html>
+<html>
+<head>
+<meta name ="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{
+margin :0:
+font-family :arial,helvetica,sans-serif;}
+.navatas{
+overflow:hidden;
+background-color:000000;}
+.navatas a{
+float:center;
+color:#f2f2f2;
+text-align:left;
+padding : 14px 16px;
+text-decoration:none;
+font-size: 17px;}
+.navatas a:hover{
+background-color:#4CAF50;
+color:yellow;}
+.navatas a:active{
+background-color:#ddd;
+color:back;}
+
+
+
+.footer-bottom{
+background-image:url("footer-bg.png");
+background-size:1920px 300px;
+color:#ffffff;
+margin-bottom:5px;
+padding:30px;
+text-align:center;}
+.sosial-media img{
+width:30px;
+heigth:30px;
+margin-right:10px;
+}
+.logo a{
+text derocation:none;
+color:#08596A;
+font-size:30px;
+}
+
+</style>
+</html>
+
+<div class="navatas">
+<a href="index.html">home</a>
+<a href="#kontak"> kontak </a>
+<a href="#download"> download</a>
+<a href="#tutorial">tutorial</a>
+<a href="asia.com">asia.com</a>
+</div>
+<div style="padding-left:25px">
+<style>
+	* {box-sizing:border-box}
+	body {font-family: Verdana,sans-serif;}
+	.mySlides {display:none}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 500px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+	</style>
+	</head>
+	<body>
+	
+
+	<h2>ASIA TENGGARA</h2>
+
+	
+
+	<div class="slideshow-container">
+	
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 6</div>
+	  <a href="indonesia.html">
+	  <img src="indonesia.jpg" style="width:100%"></a>
+	  <div class="text">indonesia</div>
+	</div>
+	
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 /6 </div>
+	   <a href="kamboja.html">
+	  <img src="kamboja.jpg" style="width:100%"></a>
+	  <div class="text">kamboja</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 6</div>
+	   <a href="filiphina.html">
+	  <img src="filiphina1.jpg" style="width:100%"></a>
+	  <div class="text">filiphina</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 6</div>
+	   <a href="laos.html">
+	  <img src="laos.jpg" style="width:100%"></a>
+	  <div class="text">laos</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">5 / 6</div>
+	   <a href="malaysia.html">
+	  <img src="malaysia.jpg" style="width:100%"></a>
+	  <div class="text">malaysia</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">6 / 6</div>
+	   <a href="singapura.html">
+	  <img src="singapura.jpg" style="width:100%"></a>
+	  <div class="text">singapura</div>
+	</div>
+
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex> slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+	<DIV STYLE="PADDING-LEFT:25PX">
+	<H1 ID="KAMBOJA">KAMBOJA</H1>
+<h2>Sejarah</h2>
+<p>Perkembangan peradaban Kamboja terjadi pada abad 1 Masehi. Selama abad ke-3,4 dan 5 Masehi, negara Funan dan Chenla bersatu untuk membangun daerah Kamboja. Negara-negara ini mempunyai hubungan dekat dengan Cina dan India. Kekuasaan dua negara ini runtuh ketika Kerajaan Khmer dibangun dan berkuasa pada abad ke-9 sampai abad ke-13.
+
+Kerajaan Khmer masih bertahan hingga abad ke-15. Ibu kota Kerajaan Khmer terletak di Angkor, sebuah daerah yang dibangun pada masa kejayaan Khmer. Angkor Wat, yang dibangun juga pada saat itu, menjadi simbol bagi kekuasaan Khmer.
+
+Pada tahun 1432, Khmer dikuasai oleh Kerajaan Thai. Dewan Kerajaan Khmer memindahkan ibu kota dari Angkor ke Lovek, di mana Kerajaan mendapat keuntungan besar karena Lovek adalah bandar pelabuhan. Pertahanan Khmer di Lovek akhirnya bisa dikuasai oleh Thai dan Vietnam, dan juga berakibat pada hilangnya sebagian besar daerah Khmer. Peristiwa ini terjadi pada tahun 1594. Selama 3 abad berikutnya, Khmer dikuasai oleh Raja-raja dari Thai dan Vietnam secara bergilir.
+
+</p><p>Pada tahun 1863, Raja Norodom, yang dilantik oleh Thai, mencari perlindungan kepada Prancis. Pada tahun 1867, Raja Norodom menandatangani perjanjian dengan pihak Prancis yang isinya memberikan hak kontrol provinsi Battambang dan Siem Reap yang menjadi bagian Thai. Akhirnya, kedua daerah ini diberikan pada Kamboja pada tahun 1906 pada perjanjian perbatasan oleh Prancis dan Thai.
+
+Kamboja dijadikan daerah Protektorat oleh Prancis dari tahun 1863 sampai dengan 1953, sebagai daerah dari Koloni Indochina. Setelah penjajahan Jepang pada 1940-an, akhirnya Kamboja meraih kemerdekaannya dari Prancis pada 9 November 1953. Kamboja menjadi sebuah kerajaan konstitusional dibawah kepemimpinan Raja Norodom Sihanouk.
+
+Pada saat Perang Vietnam tahun 1960-an, Kerajaan Kamboja memilih untuk netral. Hal ini tidak dibiarkan oleh petinggi militer, yaitu Jendral Lon Nol dan Pangeran Sirik Matak yang merupakan aliansi pro-AS untuk menyingkirkan Norodom Sihanouk dari kekuasaannya. Dari Beijing, Norodom Sihanouk memutuskan untuk beraliansi dengan gerombolan Khmer Merah, yang bertujuan untuk menguasai kembali tahtanya yang direbut oleh Lon Nol. Hal inilah yang memicu perang saudara timbul di Kamboja.
+
+Khmer Merah akhirnya menguasai daerah ini pada tahun 1975, dan mengubah format Kerajaan menjadi sebuah Republik Demokratik Kamboja yang dipimpin oleh Pol Pot. Mereka dengan segera memindahkan masyarakat perkotaan ke wilayah pedesaan untuk dipekerjakan di pertanian kolektif. Pemerintah yang baru ini menginginkan hasil pertanian yang sama dengan yang terjadi pada abad 11. Mereka menolak pengobatan Barat yang berakibat rakyat Kamboja kelaparan dan tidak ada obat sama sekali di Kamboja.
+
+Pada November 1978, Vietnam menyerbu RD Kamboja untuk menghentikan genosida besar-besaran yang terjadi di Kamboja. Akhirnya, pada tahun 1989, perdamaian mulai digencarkan antara kedua pihak yang bertikai ini di Paris. PBB memberi mandat untuk mengadakan gencatan senjata antara pihak Norodom Sihanouk dan Lon Nol.
+
+Sekarang, Kamboja mulai berkembang berkat bantuan dari banyak pihak asing setelah perang, walaupun kestabilan negara ini kembali tergoncang setelah sebuah kudeta yang gagal terjadi pada tahun 1997
+</p>
+<h2>Geografi</h2>
+<p>Kamboja mempupunyai area seluas 181.035 km2. Berbatasan dengan Thailand di barat dan utara, Laos di timurlaut dan Vietnam di timur dan tenggara. Kenampakan geografis yang menarik di Kamboja ialah adanya dataran lacustrine yang terbentuk akibat banjir di Tonle Sap. Gunung tertinggi di Kamboja adalah Gunung Phnom Aoral yang berketinggian sekitar 1.813 mdpl.</p></div>
+
+<DIV STYLE="PADDING-LEFT:25PX">
+	<H1 ID="Indonesia">indonesia</H1>
+<h2>sejarah</h2>
+<p>Indonesia (pelafalan dalam bahasa Indonesia: [in.ˈdo.nɛ.sja]), dikenal dengan nama resmi Republik Indonesia atau lebih lengkapnya Negara Kesatuan Republik Indonesia, adalah negara kepulauan di Asia Tenggara yang dilintasi garis khatulistiwa dan berada di antara daratan benua Asia dan Oseania sehingga dikenal sebagai negara lintas benua, serta antara Samudra Pasifik dan Samudra Hindia.
+Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan terbesar di dunia dengan luas wilayah sebesar 1.904.569 km², serta negara dengan pulau terbanyak ke-6 di dunia, dengan jumlah 17.504 pulau Nama alternatif yang dipakai untuk kepulauan Indonesia disebut Nusantara. Selain itu, Indonesia juga menjadi negara berpenduduk terbanyak ke-4 di dunia dengan penduduk mencapai 277.749.853 jiwa pada tahun 2022, serta negara dengan penduduk beragama Islam terbanyak di dunia, dengan penganut lebih dari 238.875.159 jiwa atau sekitar 86,9%.Indonesia adalah negara multiras, multietnis, dan multikultural di dunia, seperti halnya Amerika Serikat. 
+Indonesia berbatasan dengan sejumlah negara di Asia Tenggara dan Oseania. Indonesia berbatasan di wilayah darat dengan Malaysia di Pulau Kalimantan dan Sebatik, dengan Papua Nugini di Pulau Papua, dan dengan Timor Leste di Pulau Timor. Negara yang hanya berbatasan laut dengan Indonesia adalah Singapura, Filipina, Australia, Thailand, Vietnam, Palau, dan wilayah persatuan Kepulauan Andaman dan Nikobar, India.
+Indonesia adalah negara kesatuan dengan bentuk pemerintahan republik berdasarkan konstitusi yang sah, yaitu Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 (UUD 1945). Berdasarkan UUD 1945 pula, Dewan Perwakilan Rakyat (DPR), Dewan Perwakilan Daerah (DPD), dan Presiden dicalonkan lalu dipilih dalam pemilihan umum.
+Ibu kota Indonesia saat ini adalah Jakarta. </P><P>Pada tanggal 18 Januari 2022, pemerintah Indonesia menetapkan Ibu Kota Nusantara yang berada di Pulau Kalimantan, yang menempati wilayah Kabupaten Penajam Paser Utara, untuk menggantikan Jakarta sebagai ibu kota yang baru.[21] Hingga tahun 2022, proses peralihan ibu kota masih berlangsung.
+Sejarah Indonesia banyak dipengaruhi oleh bangsa-bangsa pendatang dan penjajah. Kepulauan Indonesia menjadi wilayah perdagangan penting sejak abad ke-7, yaitu sejak berdirinya Sriwijaya, kerajaan bercorak Hinduisme-Buddhisme yang berpusat di Palembang. Kerajaan Sriwijaya menjalin hubungan agama dan perdagangan dengan bangsa Tionghoa, India, dan juga Arab. Agama dan kebudayaan Hinduisme-Buddhisme tumbuh, berkembang, dan berasimilasi di kepulauan Indonesia pada awal abad ke-4 hingga abad ke-13 Masehi. Setelah itu, para pedagang dan ulama dari Jazirah Arab yang membawa agama dan kebudayaan Islam sekitar abad ke-8 hingga abad ke-16. Pada akhir abad ke-15, bangsa-bangsa Eropa datang ke kepulauan Indonesia dan berperang untuk memonopoli perdagangan rempah-rempah di Maluku semasa Zaman Penjelajahan. Setelah berada di bawah kolonial Belanda, Indonesia yang saat itu bernama Hindia Belanda, memproklamasikan kemerdekaan di akhir Perang Dunia II, tepatnya pada tanggal 17 Agustus 1945. Selanjutnya, Indonesia mendapat berbagai tantangan dan persoalan berat, mulai dari bencana alam, praktik korupsi yang masif, konflik sosial, gerakan separatisme, proses demokratisasi, dan periode pembangunan, perubahan dan perkembangan sosial–ekonomi–politik, serta modernisasi yang pesat.
+Indonesia terdiri dari berbagai suku bangsa, bahasa, dan agama. Berdasarkan rumpun bangsa, Indonesia terdiri atas bangsa asli pribumi yakni Austronesia dan Melanesia di mana bangsa Austronesia yang terbesar jumlahnya dan lebih banyak mendiami Indonesia bagian barat. Dengan suku Jawa dan Sunda membentuk kelompok suku bangsa terbesar dengan persentase mencapai 57% dari seluruh penduduk Indonesia Semboyan nasional Indonesia, "Bhinneka Tunggal Ika" (Berbeda-beda tetapi tetap satu), bermakna keberagaman sosial-budaya yang membentuk satu kesatuan negara. Selain memiliki penduduk yang padat dan wilayah yang luas, Indonesia memiliki alam yang mendukung tingkat keanekaragaman hayati terbesar ke-2 di dunia.</p>
+<h2>Geografi</h2>
+<p>Indonesia merupakan negara kepulauan terbesar di dunia yang berada di Asia Tenggara, dan terletak di antara benua Asia dan benua Australia/Oseania, serta di antara Samudra Hindia dan Samudra Pasifik. Negara ini memiliki 17.504 pulau yang menyebar di sekitar khatulistiwa; sebanyak 16.056 pulau telah dibakukan namanya, dan sekitar 6.000 pulau tidak berpenghuni Pulau-pulau besar di Indonesia yaitu Sumatra, Jawa, Kalimantan (berbagi dengan Malaysia dan Brunei Darussalam), Sulawesi, dan Papua (berbagi dengan Papua Nugini).
+Indonesia berada pada koordinat antara antara 6° 04' 30" LU dan 11° 00' 36" LS serta antar 94° 58' 21" dan 141° 01' 10" BT, yang membentang sepanjang 5.120 kilometer (3.181 mil) dari timur ke barat serta 1.760 kilometer (1.094 mil) dari utara ke selatan. Luas daratan Indonesia adalah 1.916.906,77 km²] sementara luas perairannya sekitar 3.110.000 km² dengan garis pantai sepanjang 108 ribu km Batas wilayah Indonesia diukur dari kepulauan dengan menggunakan teritorial laut 12 mil laut serta zona ekonomi eksklusif 200 mil laut, searah penjuru mata angin,</p></div>
+
+<DIV STYLE="PADDING-LEFT:25PX">
+<H1 ID="filiphina">filiphina</H1>
+<h2>Sejarah</h2>
+<p>Filipina, dengan nama resmi disebut sebagai Republik Filipina (bahasa Filipino: Republika ng Pilipinas) adalah sebuah negara kepulauan dan negara kesatuan yang bersistem presidensial dengan berbentuk republik konstitusional di Asia Tenggara, sebelah utara Indonesia, dan timur laut Sabah. Filipina merupakan sebuah negara kepulauan yang terletak di Lingkar Pasifik Barat, negara ini terdiri dari 7.641 pulau. Selama ribuan tahun, warga kepulauan Filipina, dan pekerja keras ini telah mengembangkan sistem cocok tanam padi yang sangat maju, yang menyediakan makanan pokok bagi masyarakatnya.
+Filipina adalah negara paling maju di Benua Asia setelah Perang Dunia II, namun sejak saat itu telah tertinggal di belakang negara-negara lain akibat pertumbuhan ekonomi yang lemah, penyitaan kekayaan yang dilakukan pemerintah, korupsi yang luas, dan pengaruh-pengaruh neo-kolonial.</p><p> Meskipun begitu, saat ini Filipina mengalami pertumbuhan ekonomi yang moderat, yang banyak disumbangkan dari pengiriman uang oleh pekerja-pekerja Filipina di luar negeri, dan sektor teknologi informasi yang sedang tumbuh pesat. Filipina sering kali dianggap sebagai satu-satunya negara di Benua Asia di mana pengaruh budaya Barat terasa sangat kuat.
+Masalah-masalah besar negara ini termasuk gerakan separatis Bangsamoro di sebelah selatan Filipina yaitu di region Mindanao, pemberontak-pemberontak dari Tentara Rakyat Baru (New People's Army) yang beraliran komunis di wilayah-wilayah pedesaan, kebijakan-kebijakan pemerintah yang sering tidak konsisten, tingkat kejahatan yang makin meningkat, dan kerusakan lingkungan seperti penebangan hutan, dan polusi laut. Filipina juga mengalami masalah banyaknya penduduk di daerah-daerah perkotaan akibat kurangnya lapangan pekerjaan di wilayah pedesaan, dan tingkat kelahiran yang tinggi.</p>
+<h2>Geografi</h2>
+<p>Filipina terdiri dari 7.107 pulau dengan luas total daratan diperkirakan 343.448 km2. Negara ini terletak antara 116° 40', dan 126° 34' BT, dan 4° 40', dan 21° 10' LU. Di timur dia berbatasan dengan Laut Filipina, di barat dengan Laut Tiongkok Selatan, dan di selatan dengan Laut Sulawesi.</p><P> Pulau Borneo terletak beberapa ratus kilometer di barat daya, dan Taiwan di utara. Maluku, dan Sulawesi di selatan, dan di timur adalah Palau. Filipina memiliki garis pantai sepanjang 36.289 km (22.549 mil) yang menjadikannya negara dengan garis pantai terpanjang kelima di dunia.
+Kepulauan ini dibagi menjadi tiga kelompok utama: Luzon (Region I sampai V + NCR & CAR), Bisaya (VI sampai VIII), dan Mindanao (IX sampai XIII + ARMM). Pelabuhan sibuk Manila, di Luzon, adalah ibu kota negara, dan kota terbesar-kedua setelah Kota Quezon</p></div>
+
+<DIV STYLE="PADDING-LEFT:25PX">
+<H1 ID="filiphina">Laos</H1>
+<h2>Sejarah</h2>
+<p>Laos (Lao: ລາວ, Lāo [láːw]), secara resmi Republik Demokratis Rakyat Laos (Lao: ສາທາລະນະລັດ ປະຊາທິປະໄຕ ປະຊາຊົນລາວ, romanized: Sathalanalat Paxathipatai Paxaxôn Lao), adalah sebuah negara yang terkurung daratan di Asia Tenggara, yang berbatasan dengan Myanmar dan Republik Rakyat Tiongkok di sebelah barat laut, Vietnam di timur, Kamboja di selatan, dan Thailand di sebelah barat. Dari abad ke-14 hingga abad ke-18, negara ini disebut Lan Xang atau "Negeri Seribu Gajah".</p>
+<P>Laos adalah sebuah Negara Republik yang dikelilingi oleh daratan dan terletak di bagian utara Semenanjung Indochina. Laos berasal dari kata Lan Xang yang artinya kerajaan gajah. Negara ini adalah satu-satunya Negara di kawasan Asia Tenggara yang tidak memiliki pantai. Laos pernah dijajah oleh Prancis dan memperoleh kemerdekaan pada 22 Oktober 1953 dalam bentuk kerajaan. Sejak 2 Desember 1975 kerajaan Laos berubah menjadi Republik Laos. Laos adalah salah satu negara komunis dengan kepala pemerintahan berupa presiden yang bernama Thongloun Sisoulith dan dibantu oleh perdana menteri yang bernama Phankam Viphavanh. Jika dilihat dari sudut pandang Geografi Politik, letak wilayah negara Laos yang tidak memiliki wilayah laut atau pantai dikenal dengan sebutan kawasan terkurung daratan atau land-lock. Kondisi ini dianggap kurang menguntungkan dari segi pertahanan dan keamanan, khususnya dari serangan atau invasi bangsa lain. Negara Laos mempunyai lembah sungai subur sehingga banyak menghasilkan tanaman pertanian dan perkebunan, terutama padi, kopi, dan tembakau. Memiliki sumber-sumber tambang mineral, seperti timah, tembaga, emas, dan perak. Wilayahnya didominasi perbukitan dan pegunungan yang tertutup hutan lebat, sehingga menghasilkan kayu sebagai salah satu komoditasnya. Potensi sosial budaya terdiri atas berbagai macam suku bangsa dengan berbagai macam budayanya, masyarakatnya sebagian besar masih patuh pada tradisi, memiliki bahasa nasional, yaitu bahasa Lao. Namun dalam kehidupan sehari-hari, selain bahasa nasionalnya masyarakat juga menggunakan bahasa Thai, Inggris, dan Prancis, memiliki banyak bangunan bersejarah, terutama candi.</P>
+<P>Laos merupakan salah satu dari lima negara komunis yang ada di dunia. Luas wilayahnya sekitar 236.800 km2 dengan jumlah penduduk sekitar 6,6 juta jiwa. Bergabung dengan ASEAN sejak tahun 1997, tetapi negara yang terkurung daratan (landlocked country) ini baru membuka diri seluas-luasnya dengan negara lain pada tahun 2004. Langkah pertama yang diambil Laos dalam membuka diri adalah menarik modal asing. Laos berkali-kali merevisi undang-undang investasi asing, serta mengizinkan perusahaan asing mentransfer keuntungan keluar Laos. Investor asing juga diizinkan mendirikan perusahaan dengan modal murni atau patungan. Pemerintah Laos bahkan tidak memungut pajak terhadap perusahaan asing untuk lima tahun pertama bisnis di Laos.<P/>
+<P>Untuk meningkatkan perekonomian, Laos menetapkan beberapa zona ekonomi, meningkatkan perdagangan internasional dan meningkatkan kerja sama regional. Mata pencaharian utama penduduk Laos pada sektor pertanian. Hasil pertanian utamanya berupa padi, jagung, tembakau, kapas, kopi dan buah jeruk. Daerah pertanian umumnya berada di daerah dataran rendah terutama di tepi sungai Mekong. Sungai Mekong merupakan urat nadi perekonomian Laos yang dimanfaatkan Laos untuk menghasilkan tenaga hydroelectric. Tenaga hydroelectric yang dihasilkan kemudian dijual oleh Laos ke negara tetangga seperti Vietnam dan Thailand. Pada tahun 2012, pemerintah Laos membentuk portal Laos Trade Center yang memberikan informasi terkait impor dan ekspor negara tersebut. Seiring keterbukaan ekonomi yang dilakukannya, perekonomian Laos meningkat sebesar 7,1% dari tahun 2001-2010 dan diharapkan meningkat sebesar 7,6% dari tahun 2011-2015. Bukan angka yang mustahil jika menilik pertumbuhan Gross Domestic Product (GDP) Laos pada tahun 2012 mencapai 8,1%.</p>
+<P>Awal sejarah Laos didominasi oleh Kerajaan Nanzhao, yang diteruskan pada abad ke-14 oleh kerajaan lokal Lan Xang yang berlangsung hingga abad ke-18, setelah Thailand menguasai kerajaan tersebut. Kemudian Prancis menguasai wilayah ini pada abad ke-19 dan menggabungkannya ke dalam Indochina Prancis pada 1893. Setelah penjajahan Jepang selama Perang Dunia II, negara ini memerdekakan diri pada 1949 dengan nama Kerajaan Laos di bawah pemerintahan Raja Sisavang Vong.</p>
+<p>Keguncangan politik di negara tetangganya Vietnam membuat Laos menghadapi Perang Indochina Kedua yang lebih besar (disebut juga Perang Rahasia) yang menjadi faktor ketidakstabilan yang memicu lahirnya perang saudara dan beberapa kali kudeta. Pada 1975 kaum komunis Pathet Lao yang didukung Uni Soviet dan komunis Vietnam menendang pemerintahan Raja Savang Vatthana dukungan Amerika Serikat dan Prancis. Setelah mengambil alih negara ini, mereka mengganti namanya menjadi Republik Demokratis Rakyat Laos yang masih berdiri hingga saat ini. Laos mempererat hubungannya dengan Vietnam dan mengendurkan larangan ekonominya pada akhir dekade 1980-an dan dimasukkan ke dalam ASEAN pada 1997.</p>
+
+<h2>Geografi</h2>
+<p>Negara Laos Secara astronomis, wilayah Laos terletak antara 14°LU – 22°LU dan antara 100°BT – 108°BT. Luas total wilayah ini mencakup 236,800 km2 dan 2% dari wilayah tersebut adalah berupa perairan.</p>
+<P>Adapun secara geografis wilayah Negara Laos memiliki batas batas wilayah sebagai berikut:</p>
+<p>Sebelah utara: Republik Rakyat Tiongkok</P>
+<P>Sebelah selatan: Kamboja</p>
+<P>Sebelah barat: Myanmar dan Thailand</p>
+<P>Sebelah timur: Vietnam</p>
+<P>Sedangkan secara geologis negara Laos masih termasuk dalam lempeng eurasia yang menyatukan Asia dengan Eropa.</p>
+<P>Berdasarkan letak astronomisnya, Laos beriklim tropis dengan suhu rata-rata tahunan antara 26 C-28 C. curah hujan rata-rata a1.500 – 2.500 mm per tahun. Laos memiliki 3 musim. Musim hujan pada bulan Juni-Oktober akibat pengaruh angin musim barat daya. Musim kemarau yang sejuk terjadi pada bulan November , Februari karena pengaruh angin musim timur. Pada bulan Maret – Mei terjadi musim pancaroba yang kering.</p>
+<p>Laos adalah negara yang terhimpit oleh daratan di Asia Tenggara dan diselimuti hutan lebat yang kebanyakan bergunung-gunung, di mana salah satunya yang tertinggi adalah Phou bia dengan ketinggian 2.817 m dari permukaan laut. Laos juga memiliki beberapa dataran rendah dan dataran tinggi. Sungai Mekong membentuk sebagian besar dari perbatasannya dengan Thailand, sementara rangkaian pegunungan dari Rantai Annam membentuk sebagian besar perbatasan timurnya dengan Vietnam.</p>
+<P>Barisan pegunungan lipatan yang membujur dari utara ke selatan dengan puncaknya Gunung Phou Bia (2.820 m)</p>
+<P>Lereng pegunungan Annam di sebelah timur yang terdiri atas batu-batuan granit berbentuk kristal. Barisan pegunungan kapur terutama di bagian tengah menjadikan pemandangan yang khas di Laos.</p>
+<P>Plato Bolaven (1.500 m) terdapat di bagian selatan yang merupakan batuan basalt</p>
+<P>Lembah Sungai Mekong di bagian barat merupakan daerah yang sangat subur dan menjadi pusat permukiman penduduk. Sungai Mekong mengalir hampir di seluruh wilayah Laos. Sungai Mekong bermuara di Teluk Tonkin sehingga sungai ini memiliki arti penting bagi perekonomian Laos, khususnya bagi sarana transportasi dan irigasi pertanian.</p>
+<p>Bentang alam negara Laos bagian utara cukup luas, menyempit di bagian tengah, dan melebar kembali di bagian selatan. Bagian dalam Semenanjung Indochina memiliki topografi yang bergunung - gunung dengan hutan - hutan lebat. Laos memiliki barisan pegunungan lipatan yang membujur dari utara ke selatan, yaitu lereng barat Pegunungan Annam, Plato Bolovens, dan daerah lembah Sungai Mekong. Gunung Phou Bia merupakan gunung tertinggi di wilayah Negara Laos dengan tinggi 2.820 meter. Daerah yang berbentuk dataran terdapat di Plato Xiang Khoang</p>
+<P>Wilayah laos terdiri atas:</p>
+<P>Batuan granit di lereng barat Pegunungan Annam</p>
+<P>Batuan kapur di barisan pegunungan yang terlatak di Laos tengah</p>
+<P>Batuan Basalt terdapat di Plato Bolovens (1.500 m). Selain itu Sungai Mekong juga mengalir di wilayah ini. </p>
+<P>Iklim Negara Laos adalah tropis dengan suhu rata-rata tahunan 26 °C di utara sampai dengan 28 °C di selatan. Curah hujan di Negara ini sangat bervariasi antara 1.500 mm sampai dengan 2.500 mm per tahun. </p>
+<P>Laos memiliki tiga musim yaitu: </p>
+<P>Musim hujan yang panas, yaitu terjadi pada bulan Juli hingga bulan Oktober</p>
+<P>Musim kemarau yang sejuk, yaitu terjadi pada bulan November hingga bulan Februari</p>
+<P>Musim Pancaroba yang kering dan panas, yaitu terjadi pada bulan Maret hingga bulan Mei</p>
+<P>Hutan di Negara Laos sangat luas yang meliputi sekitar setengah negeri. jenis hutan tersebut ialah hutan hujan tropis, hutan bambu, dan hutan yang tercampur dengan vegetasi tropis dengan perhitungan Luas wilayah Laos adalah 236.800 km2. Sekitar 70% wilayah Laos berbentuk pegunungan dan terdapat Gunung Bia setinggi 2.819 meter yang merupakan gunung tertinggi di negara ini. Sekitar 55 persen wilayah ini ditutupi oleh berbagai jenis hutan, Pada dasarnya sebagian besar hutan di Laos adalah tropis, biasanya terdiri dari pohon yang merontokkan daunnya pada musim kemarau. Kurang dari sepertiga hutan-hutan masih hutan primal. Namun hutan ini berada dalam bahaya karena penebangan yang berlebihan di sejumlah daerah seperti Selatan dan Tenggara. </p>
+<P>Bahaya lainnya datang dalam bentuk pembukaan hutan tradisional menggunakan metode tebang dan bakar oleh suku-suku gunung etnis tertentu, terutama untuk menanam padi bukit tetapi juga jagung atau poppy. Iklim Laos adalah tropis dan dipengaruhi oleh angin musim. Musim penghujan berlangsung dari Mei hingga November, diikuti oleh musim kemarau sejak December sampai April. Ibu kota dan kota terbesar di Laos adalah Vientiane, kota-kota besar lain meliputi Luang Prabang, Savannakhet, dan Pakse. </p>
+<P>Pada 1993, pemerintah mencanangkan 21% dari wilayah negara sebagai Area Konservasi Keanekaragaman Hayati Nasional (National Biodiversity Conservation Area/NBCA), yang mungkin akan dikembangkan menjadi sebuah taman nasional. Bila telah selesai, maka ia diperkirakan akan menjadi taman nasional terbaik dan terluas di Asia Tenggara.</p>
+<P>Sejumlah spesies binatang baru telah ditemukan atau ditemukan kembali di Laos beberapa tahun terakhir. Termasuk di dalamnya kelinci Annam, saola, dan yang terbaru adalah tikus batu Laos atau kha-nyou.</p>
+</div>
+
+<DIV STYLE="PADDING-LEFT:25PX">
+<H1 ID="Malaysia">Malaysia</H1>
+<h2>Sejarah</h2>
+<P>Kanggo wilayah biogeografi Indomalaya sing mencakup Malaysia nang jerone, deleng Malesia</p>
+<P>jumlah pekerja Malaysia di Indonesia ialah 200 ribu orang, ini adalah berkadar songsang dengan tahun lepas iaitu hanya 170 ribu orang. Kerajaan perlu mengambil tindakan dengan apa yang telah berlaku, kerana sudah lebih ramai pekerja Malaysia yang pergi ke Indonesia di banding pekerja asing Indonesia yang pergi ke Malaysia The World Fact Book: Malaysia. Diakses tanggal 9 Juli 2023.Ibukotane kuwe Kuala Lumpur, nek Putrajaya kuwe dadi pusat pemerentahan persekutuan. Jumlah penduduk negara kiye nglewihi 27 juta jiwa. Negara kiye dipisahkna dadi loro  Malaysia Barat lan Malaysia Timur oleh Kepulauan Natuna, wilayah Indonesia nang Laut Cina Selatan. Malaysia berbatasan karo Thailand, Indonesia, Singapura, Brunei, lan Filipina Negara kiye manggone pérêk karo khatulistiwa lan nduweni iklim tropika. Kepala negara Malaysia yakuwe Yang di-Pertuan Agong lan pemerentahannya dikepalai nang Perdana Menteri. Model pemerentahan Malaysia mirip dengan sistem parlementer Westminster</p>
+<P>Malaysia sebagai negara persekutuan ora tau ana nganti taun 1963. Sedurunge, sekumpulan koloni didirikna nang Britania Raya jamane abad kaping-18, lan paro barat Malaysia modern terdiri sekang beberapa kerajaan sing terpisah-pisah. Kumpulan wilayah jajahan kuwe dikenal sebagai Malaya Britania nganti pembubarane taun 1946, dong kumpulan kuwe disusun maning dadi Uni Malaya. Jalaran semakin meluasnya tentangan, kumpulan kuwe disusun maning dadi Federasi Malaya nang taun 1948 lan banjur meraih kemerdekaan tanggal 31 Agustus 1957. </p>
+<P> Pada 16 September 1963 sesuai karo Cithakan:Sourcetext nang jerone proses dekolonialisasi, Singapura, Sarawak, Borneo Utara atawa sing sekiye lewih dikenal nganggo jeneng Sabah ganti dadi negara bagian sekang federasi bentukan anyar sing jenenge Malaysia termasuk karo Federasi Malaya. lan pada 9 Agustus 1965 Singapura banjur ditokna Malaysia lan dadi negara merdeka sing jenenge Republik Singapura. Nang taun-taun awal pembentukane federasi anyar olih tentangan sekang Filipina lan konflik militer dengan Indonesia</p>
+<P>Bangsa-bangsa nang Asia Tenggara mengalami ledakan ekonomi lan menjalani perkembangan sing cepet nang penghujung abad ke-20. Pertumbuhan sing cepat pada dasawarsa 1980-an lan 1990-an, rata-rata 8% sekang taun 1991 hingga 1997, telah mengubah Malaysia menjadi negara industri anyar. Karena Malaysia adalah salah satu sekang tiga negara sing menguasai Selat Malaka, perdagangan internasional berperan penting nang dalam ekonominya. Pada suatu ketika, Malaysia pernah menjadi penghasil timah, karet lan minyak kelapa sawit nang dunia.] Industri manufaktur memiliki pengaruh besar bagi ekonomi negara ini Malaysia juga dipandang sebagai salah satu sekang 18 negara berkeanekaragaman hayati terbesar nang dunia</p>
+<P>Suku Melayu menjadi bagian terbesar sekang populasi Malaysia. Terdapat pula komunitas Tionghoa-Malaysia lan India-Malaysia sing cukup besar. Bahasa Melayu lan Islam masing-masing menjadi bahasa lan agama resmi negara. Malaysia adalah anggota perintis ASEAN lan turut serta nang berbagai organisasi internasional, seperti PBB. Sebagai bekas jajahan Inggris, Malaysia juga menjadi anggota Negara-Negara Persemakmuran. Malaysia juga menjadi anggota D-8. </p> 
+<h2>Geografi</h2>
+
+<P>Malaysia adalah negara berpenduduk terakeh ke-43 lan negara dengan daratan terluas ke-66 nang dunia, dengan jumlah penduduk kira-kira 27 juta lan luas wilayah melebihi 320.000 km2. Jumlah penduduk sedemikian cukup sebanding dengan jumlah penduduk Arab Saudi lan Venezuela, lan luas wilayah sedemikian sebanding dengan luas wilayah Norwegia lan Vietnam, atawa New Mexico, sebuah negara bagian nang Amerika Serikat. </p>
+<P>Malaysia terdiri atas dua kawasan utama sing terpisah oleh Laut Cina Selatan. Keduanya memiliki bentuk muka bumi sing hampir sama, yaitu sekang pinggir laut sing landai hingga hutan lebat lan bukit tinggi. Puncak tertinggi nang Malaysia (dan juga nang Kalimantan) yaitu Gunung Kinabalu setinggi 4.095,2 meter nang Sabah. Iklim lokal adalah khatulistiwa lan dicirikan oleh angin muson barat daya (April hingga Oktober) lan timur laut (Oktober hingga Februari). </p>
+
+<P>Tanjung Piai, terletak nang selatan negara bagian Johor, adalah tanjung paling selatan benua Asia. Selat Malaka, terletak nang antara Sumatera lan Semenanjung Malaysia, jalur pelayaran terpenting nang dunia. </p>  
+<P>Kuala Lumpur adalah ibukota resmi lan kota terbesar nang Malaysia. Putrajaya nang pihak sejen, dipandang sebagai ibukota administratif pemerentahan persekutuan Malaysia. Meskipun akeh cabang eksekutif lan judikatif pemerentahan persekutuan telah pindah ke sana (untuk menghindari kemacetan sing tumbuh nang Kuala Lumpur), tetapi Kuala Lumpur masih dipandang sebagai ibukota legislatif Malaysia karena nang sanalah beradanya kompleks gedung Parlemen Malaysia. Kuala Lumpur juga merupakan pusat perdagangan lan keuangan Malaysia. </p>
+<P>Kota utama sejen termasuk Ipoh, George Town, Johor Bahru, Kuching, Kota Kinabalu, Miri, Alor Star, Kota Melaka, lan Petaling Jaya. </p>
+</div>
+<DIV STYLE="PADDING-LEFT:25PX">
+<H1 ID="singapura">singapura</H1>
+<h2>Sejarah</h2>
+
+<P>Singapura (nama resmi: Republik Singapura) adalah sebuah negara pulau dan negara kota di lepas ujung selatan Semenanjung Malaya, 137 kilometer (85 mi) di utara khatulistiwa di Asia Tenggara. Negara ini terpisah dari Malaysia oleh Selat Johor di utara, dan dari Kepulauan Riau, Indonesia oleh Selat Singapura di selatan. Singapura adalah pusat keuangan terdepan ketiga di dunia dan sebuah kota dunia kosmopolitan yang memainkan peran penting dalam perdagangan dan keuangan internasional. Pelabuhan Singapura adalah satu dari lima pelabuhan tersibuk di dunia. </p>
+
+<P>Singapura memiliki sejarah imigrasi yang panjang. Penduduknya yang beragam berjumlah kira-kira 6 juta jiwa, terdiri dari Orang Tionghoa, Melayu, India, Arab, berbagai keturunan Asia, dan Kaukasoid. Sebanyak 42% penduduk Singapura adalah orang asing yang bekerja dan menuntut ilmu di sana. Pekerja asing membentuk 50% dari sektor jasa. Negara ini adalah yang terpadat kedua di dunia setelah Monako.[13] A.T. Kearney menyebut Singapura sebagai negara paling terglobalisasi di dunia dalam Indeks Globalisasi tahun 2006. </p>
+
+ <P>Sebelum merdeka tahun 1965, Singapura adalah pelabuhan dagang yang beragam dengan PDB per kapita $511, tertinggi ketiga di Asia Timur pada saat itu. Setelah merdeka, investasi asing langsung dan usaha pemerintah untuk industrialisasi berdasarkan rencana bekas Deputi Perdana Menteri Dr. Goh Keng Swee membentuk ekonomi Singapura saat ini. </p>
+
+<P>Economist Intelligence Unit dalam "Indeks Kualitas Hidup" menempatkan Singapura pada peringkat satu kualitas hidup terbaik di Asia dan kesebelas di dunia. Singapura memiliki cadangan devisa terbesar kesembilan di dunia. Negara ini juga memiliki angkatan bersenjata yang maju. </p>
+
+<P> Setelah PDB-nya berkurang -6.8% pada kuartal ke-4 tahun 2009, Singapura mendapatkan gelar pertumbuhan ekonomi tercepat di dunia, dengan pertumbuhan PDB 17.9% pada pertengahan pertama 2010</p>
+<h2>Geografi</h2>
+<P>Singapura terdiri dari 63 pulau, termasuk daratan Singapura. Pulau utama sering disebut Pulau Singapura tetapi secara resmi disebut Pulau Ujong (Melayu: berarti pulau di ujung daratan (semenanjung)). Terdapat dua jembatan buatan menuju Johor, Malaysia: Jalan Layang Johor–Singapura di utara dan Penghubung Kedua Malaysia–Singapura di barat. Pulau Jurong, Pulau Tekong, Pulau Ubin dan Pulau Sentosa adalah pulau-pulau yang terbesar dari beberapa pulau kecil di Singapura. Titik alami tertinggi adalah Bukit Timah Hill dengan tinggi 166 m (545 ft).</p>
+<P> Singapura memiliki banyak proyek reklamasi tanah dengan tanah diperoleh dari bukit, dasar laut, dan negara tetangga. Hasilnya, daratan Singapura meluas dari 581,5 km2 (224,5 sq mi) pada 1960-an menjadi 704 km2 (271,8 sq mi) pada hari ini, dan akan meluas lagi hingga 100 km2 (38,6 sq mi) pada 2030. Proyek ini kadang mengharuskan beberapa pulau kecil digabungkan melalui reklamasi tanah untuk membentuk pulau-pulau besar dan berguna, contohnya Pulau Jurong.</p>
+
+</div>
+
+
+<h6 align="center"><font color="black">writer:syifani husna </font></h6>
+<DIV>
+<h2 id="download">Link Download lagu kebangsaan</h2>
+<p><a href="https://cdn2.canehill.info/dl?hash=sbfgsOda%2F0n2Ve5XKeR6YGowRaCn2wbv4iqESgSvX%2B1vJuZApjpsViInobwgTQCJFRdOyo9PK0ClpXfsh4jo9VqnOYKznqr4cCmpmiZxG7L%2BMhUPwwuS%2FC6yWQd8TEbc7GvXYJb5Epxw7JaLr7hHrkPn0KlFia8KDXijJ6O5DPHLRTlgDMEH1GiwQk1YU%2FeJKw3%2FjsV4YqhBBKel1F%2BEndQF1qQARMR8qaTXuKBtD1orbCB01KvsSj3Xj64CiDhx
+"> Lagu Kebangsaan Kamboja : Noko Reach</a></p>
+<p><a href="https://cdn2.canehill.info/dl?hash=Xzubq8BegfzlVl6Wuc5h7qdJAZ6YurvvVOq9ce%2B9eOio3r6CtTDZI4aSJ5YUOI%2Bj12oYbAwcvKHIUB89hUWA%2F5HETimZMags9ESa3ay78Ha3osiXdz%2Bhr7sz2s3WwvXjyGTyitJt3bQodo7lmVzPo42E1WUaaUApqhe9gQRx2go2%2FLk27E5K9UL0CLCrhH23Twbc%2FGiECbv9xZeBRwq%2Fk0tLhpEiiKgGgEtVkrJJW6AvHFB4Ab6ROwZi13IESJSE
+"> Lagu Kebangsaan indonesia: indonesia raya</a></p>
+</DIV>
+</div>
+<div >
+
+
+
+<h1 id="tutorial">tutorial</h2>
+<iframe width="550" height="310" src="https://www.youtube.com/embed/TX0uYx_-N7A?si=dV9x5DAMsVjao7SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="550" height="310" src="https://www.youtube.com/embed/7bqt5gYwyGA?si=jz9MOaXD9AuoUcWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div class="footer-bottom">
+<div id="kontok" class="sosial-media">
+<a href="facebook.com/smkluqmanalhakim.kudus"><img src="facebook.png" alt="facebook"></a>
+<a href="https://www.youtube.com/@smkluqmanalhakimkudus7189"><img src="youtube.png" alt="youtube"></a>
+<a href="instagram.com/smkluqmanalhakim.kudus/?hl=id"><img src="instagram.png" alt="instagram"></a>
+</div>
+
+
+
+
+
+<p align="center">hak cipta &copy;2023 asia tenggara.hak cipta dilindungi.</p>
+</div>
+</body>
+</html>
